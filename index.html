@@ -6,12 +6,12 @@
   <title>Educational Web Apps</title>
   <style>
     :root {
-      --bg: #fafafa;
-      --text: #222;
-      --accent: #0066aa;
-      --card-bg: #fff;
-      --border: #ddd;
-      --font: "Helvetica Neue", sans-serif;
+      --bg: #ffffff;
+      --text: #000000;
+      --accent: #0055aa;
+      --card-bg: #ffffff;
+      --border: #cccccc;
+      --font: "Helvetica Neue", Helvetica, sans-serif;
     }
 
     body {
@@ -19,7 +19,7 @@
       font-family: var(--font);
       background: var(--bg);
       color: var(--text);
-      padding: 2rem 1rem;
+      padding: 2rem;
       line-height: 1.6;
     }
 
@@ -31,17 +31,16 @@
     h1 {
       font-size: 2rem;
       font-weight: 400;
-      text-align: center;
+      text-align: left;
       margin-bottom: 1.5rem;
       letter-spacing: 0.05em;
     }
 
     p.description {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 2rem;
-      color: #444;
+      text-align: justify;
+      margin-bottom: 2rem;
       font-size: 1.05rem;
+      color: #000;
     }
 
     section {
@@ -49,31 +48,30 @@
     }
 
     section h2 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 400;
       border-left: 4px solid var(--accent);
       padding-left: 0.6rem;
       margin-bottom: 1rem;
-      color: #333;
     }
 
     .apps {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 1.5rem;
     }
 
     .app {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      padding: 1rem;
-      text-align: center;
-      border-radius: 4px;
+      padding: 1.2rem;
+      border-radius: 0;
+      text-align: left;
       transition: background 0.2s;
     }
 
     .app:hover {
-      background: #f1f1f1;
+      background: #f9f9f9;
     }
 
     .app a {
@@ -86,19 +84,22 @@
     .app p {
       margin-top: 0.5rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #222;
     }
 
     footer {
       margin-top: 3rem;
-      text-align: center;
       font-size: 0.85rem;
-      color: #aaa;
+      color: #555;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      text-align: justify;
     }
 
     .acknowledgements {
-      margin-top: 1.5rem;
-      color: #999;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #777;
     }
 
     a {
@@ -109,44 +110,53 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .apps {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>Educational Web Apps</h1>
     <p class="description">
-      A collection of interactive tools designed to explore and teach (astro)physics. Created by <a href="https://jensmahlmann.com/" target="_blank">Jens Mahlmann</a> to support curiosity, collaboration, and intuition building.
+      This is a growing collection of minimal, interactive web tools to explore and teach key ideas in astrophysics, physics, and mathematics. Developed by <a href="https://jensmahlmann.com/" target="_blank">Jens Mahlmann</a>, these apps aim to clarify complex topics with simple visuals and intuitive interactions. Whether you are a student, a teacher, or simply curious, these tools are here to help deepen your insight.
     </p>
 
     <section>
-      <h2>Companion Rotation</h2>
+      <h2>Dynamics of Compact Binaries</h2>
       <div class="apps">
         <div class="app">
           <a href="binary_rotation/">Companion Rotation</a>
-          <p>Visualize the differential rotation of binary stars in different frames.</p>
+          <p>Visualize the differential rotation of binary stars in various reference frames.</p>
+        </div>
+        <div class="app">
+          <a href="binary_orbits/">Companion Orbits</a>
+          <p>Visualize the orbital dynamics of binary stars in various reference frames.</p>
         </div>
         <!-- Future apps related to compact binaries can go here -->
       </div>
     </section>
 
-    <!-- Example for another section -->
+    <!-- Example for future sections -->
     <!--
     <section>
-      <h2>Magnetospheres & Plasma</h2>
+      <h2>Plasma & Magnetospheres</h2>
       <div class="apps">
         <div class="app">
-          <a href="magnetosphere_sim/">Magnetosphere Explorer</a>
-          <p>Explore the geometry and particle flow in dipolar magnetic fields.</p>
+          <a href="magnetosphere_explorer/">Magnetosphere Explorer</a>
+          <p>Explore particle flows and field geometry around compact objects.</p>
         </div>
       </div>
     </section>
     -->
 
     <footer>
-      &copy; 2025 Jens Mahlmann
+      &copy; 2025 Jens Mahlmann.
       <div class="acknowledgements">
-        Built with the support of generative AI and the students of ASTR 75.<br />
-        Source available on <a href="https://github.com/jmahlmann/edu_apps.github.io" target="_blank">GitHub</a>.
+        Built with support from generative AI tools and the students of ASTR 75 at Dartmouth College. Source code available on <a href="https://github.com/jmahlmann/edu_apps.github.io" target="_blank">GitHub</a>.
       </div>
     </footer>
   </main>
