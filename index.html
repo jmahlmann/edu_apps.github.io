@@ -44,11 +44,23 @@
       font-size: 1.05rem;
     }
 
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.6rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
     .apps {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 1.5rem;
-      padding: 1rem 0;
     }
 
     .app {
@@ -106,14 +118,29 @@
       A collection of minimal, interactive tools designed to explore and teach astrophysics, physics, and mathematics. Created by <a href="https://jensmahlmann.com/" target="_blank">Jens Mahlmann</a> to support curiosity, collaboration, and clarity.
     </p>
 
-    <div class="apps">
-      <div class="app">
-        <a href="binary_orbits/">Binary Orbits</a>
-        <p>Visualize the motion of binary stars and their center of mass.</p>
+    <section>
+      <h2>Compact Binary Dynamics</h2>
+      <div class="apps">
+        <div class="app">
+          <a href="binary_orbits/">Binary Orbits</a>
+          <p>Visualize the motion of binary stars and their center of mass.</p>
+        </div>
+        <!-- Future apps related to compact binaries can go here -->
       </div>
+    </section>
 
-      <!-- Add more apps here -->
-    </div>
+    <!-- Example for another section -->
+    <!--
+    <section>
+      <h2>Magnetospheres & Plasma</h2>
+      <div class="apps">
+        <div class="app">
+          <a href="magnetosphere_sim/">Magnetosphere Explorer</a>
+          <p>Explore the geometry and particle flow in dipolar magnetic fields.</p>
+        </div>
+      </div>
+    </section>
+    -->
 
     <footer>
       &copy; 2025 Jens Mahlmann
