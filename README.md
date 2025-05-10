@@ -13,7 +13,7 @@ Explore the full collection of apps on the [Interactive Insights website](https:
 For feedback, suggestions, or ideas on existing and future apps, please reach out to [Jens Mahlmann](https://jensmahlmann.com/) at [jens.f.mahlmann@dartmouth.edu](mailto:jens.f.mahlmann@dartmouth.edu).
 
 ## Acknowledgments  
-- Built with the support of **generative AI tools** for faster development and richer interactivity.  
+- Built with the support of **generative AI tools** in the development pipeline.  
 - Created in collaboration with **ASTR 75** participants at **Dartmouth College**, whose ideas and enthusiasm helped shape these tools.  
 - A big thank you to **everybody** who helps make these resources freely available for the broader scientific community.
 
