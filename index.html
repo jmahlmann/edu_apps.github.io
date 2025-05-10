@@ -6,63 +6,133 @@
   <title>Jens Mahlmann – Edu Apps</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      background-color: #f9f9f9;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
+
     h1 {
       text-align: center;
+      font-size: 3em;
+      color: #333;
+      margin-top: 2rem;
+      font-weight: 500;
     }
+
+    p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      font-size: 1.2rem;
+      color: #666;
+    }
+
     .apps {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5em;
-      max-width: 800px;
-      margin: 2em auto;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2em;
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
+
     .app {
-      padding: 1em;
-      border-radius: 8px;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .app:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .app a {
+      display: block;
+      background-color: #007acc;
+      color: #fff;
+      padding: 1.5rem;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25rem;
+      border-bottom: 3px solid #005f8c;
+      transition: background-color 0.3s ease;
+    }
+
+    .app a:hover {
+      background-color: #005f8c;
+    }
+
+    .app p {
+      padding: 1rem;
+      font-size: 1rem;
+      color: #555;
       text-align: center;
     }
-    .app a {
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
-    }
+
     .footer {
       text-align: center;
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #999;
+      margin-top: 4rem;
+      padding: 2rem 1rem;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .footer a {
+      color: #f4f4f4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      color: #007acc;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .apps {
+        grid-template-columns: 1fr;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      .app a {
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Educational Web Apps by Jens Mahlmann</h1>
-  <p style="text-align: center;">Interactive tools for teaching and exploring astrophysics, physics, and math.</p>
+  <p>Explore interactive tools designed to teach astrophysics, physics, and math. These apps simplify complex topics, foster curiosity, and promote collaboration. Whether you're just beginning or delving deeper into science, these resources are here to support your learning journey.</p>
 
   <div class="apps">
     <div class="app">
       <a href="binary_orbits/">Binary Orbits</a>
       <p>Visualize the motion of binary stars and their center of mass.</p>
     </div>
-
-    <!-- Add more apps below -->
-    <!--
-    <div class="app">
+    
+    <!-- You can add more apps below -->
+    <!-- <div class="app">
       <a href="your_app_folder/">Your App Name</a>
       <p>Short description of the app.</p>
-    </div>
-    -->
+    </div> -->
 
   </div>
 
   <div class="footer">
-    &copy; 2025 Jens Mahlmann
+    &copy; 2025 Jens Mahlmann | <a href="https://github.com/jmahlmann/edu_apps.github.io" target="_blank">View Source Code</a>
   </div>
 </body>
 </html>
