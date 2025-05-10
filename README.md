@@ -3,7 +3,7 @@
 Welcome to the repository for **Interactive Insights** — a collection of web apps designed to explore the world of plasma astrophysics. These interactive tools bridge theory, intuition, observation, and experiment with hands-on experiences to visualize complex astrophysical phenomena.
 
 ## Purpose  
-This repository contains interactive tools to explore plasma physics, high-energy astrophysics, and related fields. They help visualize concepts like magnetic fields, plasma dynamics, and high-energy phenomena, making them easier to grasp and more engaging to study.
+This repository features interactive tools for exploring plasma physics, high-energy astrophysics, and related fields. They focus on visualizing key concepts like magnetic fields, plasma dynamics, and high-energy phenomena, making these ideas more tangible and fun to experiment with.
 
 
 ## View the Apps  
