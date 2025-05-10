@@ -73,6 +73,13 @@ function estimateLagrangePoints(m1, m2, a) {
   return { L1, L2, L3, L4, L5, xRange, yRange };
 }
 
+function rocheLobeRadius(q) {
+  return (
+    (0.49 * Math.pow(q, 2 / 3)) /
+    (0.6 * Math.pow(q, 2 / 3) + Math.log(1 + Math.pow(q, 1 / 3)))
+  );
+}
+
 export default function App() {
   const [m1, setM1] = useState(1);
   const [m2, setM2] = useState(1);
@@ -85,6 +92,12 @@ export default function App() {
     m2,
     a
   );
+
+  // Roche lobe radii
+  const q1 = m1 / m2;
+  const q2 = m2 / m1;
+  const RL1 = rocheLobeRadius(q1) * a;
+  const RL2 = rocheLobeRadius(q2) * a;
 
   // Compute Roche potential
   const { x, y, z } = computePotential(m1, m2, a, omega, xRange, yRange);
@@ -205,6 +218,34 @@ export default function App() {
                 line: { width: 2, color: "white" },
               },
               name: "Point Mass",
+            },
+            {
+              type: "scatter",
+              mode: "lines",
+              x: Array.from(
+                { length: 100 },
+                (_, i) => x1 + RL1 * Math.cos((2 * Math.PI * i) / 100)
+              ),
+              y: Array.from(
+                { length: 100 },
+                (_, i) => 0 + RL1 * Math.sin((2 * Math.PI * i) / 100)
+              ),
+              line: { color: "black", dash: "dot" },
+              showlegend: false,
+            },
+            {
+              type: "scatter",
+              mode: "lines",
+              x: Array.from(
+                { length: 100 },
+                (_, i) => x2 + RL2 * Math.cos((2 * Math.PI * i) / 100)
+              ),
+              y: Array.from(
+                { length: 100 },
+                (_, i) => 0 + RL2 * Math.sin((2 * Math.PI * i) / 100)
+              ),
+              line: { color: "black", dash: "dot" },
+              name: "Roche Lobes (Eggleton's Formula)",
             },
           ]}
           layout={{
