@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/edu_apps.github.io/roche_potential/static/js/main.9c81d1ae.js",
+    "main.js": "/edu_apps.github.io/roche_potential/static/js/main.adea053d.js",
     "index.html": "/edu_apps.github.io/roche_potential/index.html",
-    "main.9c81d1ae.js.map": "/edu_apps.github.io/roche_potential/static/js/main.9c81d1ae.js.map"
+    "main.adea053d.js.map": "/edu_apps.github.io/roche_potential/static/js/main.adea053d.js.map"
   },
   "entrypoints": [
-    "static/js/main.9c81d1ae.js"
+    "static/js/main.adea053d.js"
   ]
 }
