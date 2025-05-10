@@ -3,136 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jens Mahlmann – Edu Apps</title>
+  <title>Educational Web Apps</title>
   <style>
+    :root {
+      --bg: #fafafa;
+      --text: #222;
+      --accent: #0066aa;
+      --card-bg: #fff;
+      --border: #ddd;
+      --font: "Helvetica Neue", sans-serif;
+    }
+
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
       line-height: 1.6;
     }
 
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      color: #333;
-      margin-top: 2rem;
-      font-weight: 500;
+    main {
+      max-width: 960px;
+      margin: 0 auto;
     }
 
-    p {
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
       text-align: center;
-      max-width: 800px;
-      margin: 0 auto 3rem;
-      font-size: 1.2rem;
-      color: #666;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    p.description {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      color: #444;
+      font-size: 1.05rem;
     }
 
     .apps {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 2em;
-      max-width: 1200px;
-      margin: 3rem auto;
-      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 0;
     }
 
     .app {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 4px;
+      transition: background 0.2s;
     }
 
     .app:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      background: #f1f1f1;
     }
 
     .app a {
-      display: block;
-      background-color: #007acc;
-      color: #fff;
-      padding: 1.5rem;
       text-decoration: none;
-      text-align: center;
+      color: var(--accent);
       font-weight: bold;
-      font-size: 1.25rem;
-      border-bottom: 3px solid #005f8c;
-      transition: background-color 0.3s ease;
-    }
-
-    .app a:hover {
-      background-color: #005f8c;
+      font-size: 1rem;
     }
 
     .app p {
-      padding: 1rem;
-      font-size: 1rem;
-      color: #555;
-      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
     }
 
-    .footer {
+    footer {
+      margin-top: 3rem;
       text-align: center;
-      margin-top: 4rem;
-      padding: 2rem 1rem;
-      background-color: #333;
-      color: #fff;
-      font-size: 1rem;
+      font-size: 0.85rem;
+      color: #aaa;
     }
 
-    .footer a {
-      color: #f4f4f4;
+    .acknowledgements {
+      margin-top: 1.5rem;
+      color: #999;
+    }
+
+    a {
+      color: var(--accent);
       text-decoration: none;
-      font-weight: bold;
     }
 
-    .footer a:hover {
-      color: #007acc;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .apps {
-        grid-template-columns: 1fr;
-        padding: 0;
-      }
-      h1 {
-        font-size: 2.5rem;
-      }
-      .app a {
-        font-size: 1.125rem;
-      }
-      p {
-        font-size: 1.1rem;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Educational Web Apps by Jens Mahlmann</h1>
-  <p>Explore interactive tools designed to teach astrophysics, physics, and math. These apps simplify complex topics, foster curiosity, and promote collaboration. Whether you're just beginning or delving deeper into science, these resources are here to support your learning journey.</p>
+  <main>
+    <h1>Educational Web Apps</h1>
+    <p class="description">
+      A collection of minimal, interactive tools designed to explore and teach astrophysics, physics, and mathematics. Created by <a href="https://jensmahlmann.com/" target="_blank">Jens Mahlmann</a> to support curiosity, collaboration, and clarity.
+    </p>
 
-  <div class="apps">
-    <div class="app">
-      <a href="binary_orbits/">Binary Orbits</a>
-      <p>Visualize the motion of binary stars and their center of mass.</p>
+    <div class="apps">
+      <div class="app">
+        <a href="binary_orbits/">Binary Orbits</a>
+        <p>Visualize the motion of binary stars and their center of mass.</p>
+      </div>
+
+      <!-- Add more apps here -->
     </div>
-    
-    <!-- You can add more apps below -->
-    <!-- <div class="app">
-      <a href="your_app_folder/">Your App Name</a>
-      <p>Short description of the app.</p>
-    </div> -->
 
-  </div>
-
-  <div class="footer">
-    &copy; 2025 Jens Mahlmann | <a href="https://github.com/jmahlmann/edu_apps.github.io" target="_blank">View Source Code</a>
-  </div>
+    <footer>
+      &copy; 2025 Jens Mahlmann
+      <div class="acknowledgements">
+        Built with the support of generative AI and the students of ASTR 75.<br />
+        Source available on <a href="https://github.com/jmahlmann/edu_apps.github.io" target="_blank">GitHub</a>.
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
