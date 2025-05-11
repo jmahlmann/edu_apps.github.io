@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/edu_apps.github.io/binary_rotation/static/js/main.53d78a70.js",
+    "main.js": "/edu_apps.github.io/binary_rotation/static/js/main.19b5397f.js",
     "index.html": "/edu_apps.github.io/binary_rotation/index.html",
-    "main.53d78a70.js.map": "/edu_apps.github.io/binary_rotation/static/js/main.53d78a70.js.map"
+    "main.19b5397f.js.map": "/edu_apps.github.io/binary_rotation/static/js/main.19b5397f.js.map"
   },
   "entrypoints": [
-    "static/js/main.53d78a70.js"
+    "static/js/main.19b5397f.js"
   ]
 }
