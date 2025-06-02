@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/edu_apps.github.io/gw_detector/static/js/main.88e61834.js",
+    "main.js": "/edu_apps.github.io/gw_detector/static/js/main.9ff4c126.js",
     "index.html": "/edu_apps.github.io/gw_detector/index.html",
-    "main.88e61834.js.map": "/edu_apps.github.io/gw_detector/static/js/main.88e61834.js.map"
+    "main.9ff4c126.js.map": "/edu_apps.github.io/gw_detector/static/js/main.9ff4c126.js.map"
   },
   "entrypoints": [
-    "static/js/main.88e61834.js"
+    "static/js/main.9ff4c126.js"
   ]
 }
